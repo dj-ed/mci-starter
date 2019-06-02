@@ -1,12 +1,12 @@
 
 # Windows 10
 
-Instalirati git i  git-bash koji dolazi sa instalacijom.
+Instalirati `git` i  `git-bash` koji dolazi sa instalacijom.
 https://gitforwindows.org/
 https://www.onlinetutorialspoint.com/git/how-to-install-git-windows-10-operating-system.html
 
 
-Instalirati nodejs
+Instalirati `nodejs`
 
 https://blog.risingstack.com/node-js-windows-10-tutorial/
 Proveriti da li su instalirani *npm* in *nodejs*.
@@ -37,19 +37,20 @@ npm install gulp-cli -g
 ```
 
 ##### Gulp vezba
-
+Poenta vezbe je kreirati novi projekat i setovati osnovno frontend okruženje. Svi npm moduli ce biti instalirani unutar *node_modules* foldera a informacije o svima njima ce biti sadržane unutar *package.json* fajla.
+```
 cd
 mkdir Sites
 cd Sites
 mkdir $PROJECT_FOLDER_NAME // OR // git clone $REPO_URL $PROJECT_FOLDER_NAME
 cd $PROJECT_FOLDER_NAME
-
+```
 1. Prvo kreiramo *package.json*:
 ```
 npm init
 ```
 
-2. Zatim kreiramo **gulpfile.js** sa sledecim sadrzajem
+2. Zatim kreiramo **gulpfile.js** sa sledećim sadržajem
 
 ```
 	//  Require Gulp into file and define the variable.
@@ -60,19 +61,19 @@ npm init
 	});
 ```
 
-3. U git-bash zatim instaliramo gulp lokalno u projekat pomocu sledece komande
+3. Pomoću `git-bash` programa zatim instaliramo `gulp` lokalno u projekat pomoću sledeće komande
 ```
 npm install gulp
 npm link gulp </-- U slucaju da izbaci error(> npm ERR ! Invalid tag name "gulp":), moramo ga linkovati na globalnu instalaciju
 ```
 
-Pokrenuti *hello* gulp task koji smo definisalu unutar **gulpfile.js**
+Pokrenuti *hello* gulp task koji smo definisali unutar **gulpfile.js**
 ```
 gulp hello
 ```
 
-###### Ako je instalacija prosla uspeshno klonirati *'mci-starter'* lokalno i instalirati ga gore koriscenim principom.
-###### Unutar projekta trenutno samo postoji 'default' task koji se moze pokrenuti sa komandom:
+###### Ako je instalacija prosla uspešno klonirati *'mci-starter'* lokalno i instalirati ga gore korišćenim koracima.
+###### Unutar projekta trenutno samo postoji 'default', koji radi `compile` scss fajlova u CSS i spaja naše JS fajlove koji se nalaze unutar JS foldera. 'default' task se pokreće sa komandom:
 ```
 gulp
 ```
