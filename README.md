@@ -2,6 +2,7 @@
 # Windows 10
 
 Instalirati `git` i  `git-bash` koji dolazi sa instalacijom.
+
 https://gitforwindows.org/
 https://www.onlinetutorialspoint.com/git/how-to-install-git-windows-10-operating-system.html
 
@@ -9,6 +10,8 @@ https://www.onlinetutorialspoint.com/git/how-to-install-git-windows-10-operating
 Instalirati `nodejs`
 
 https://blog.risingstack.com/node-js-windows-10-tutorial/
+
+Ispratiti korake unutar tutorial-a i posebno obratiti paznju na dodavanje nove putanje na `Paths` windows varijablu.
 Proveriti da li su instalirani *npm* in *nodejs*.
 Notice: Ako je  bio otvoren git-bash zatvoriti i otvoriti novi prozor. 
 		U protivnom 'git-bash' nece prepoznati da je nodejs instaliran.
